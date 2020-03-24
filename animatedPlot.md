@@ -1,9 +1,12 @@
+# Animated_Plot
+## Tun is the dataset
+### for more info check the server.r
 aspect_ratio <- 4.5
 plo2=ggplot(Tun, aes(Date, y=Tunidex20_Clot , colour = isConfirmed ))+
   geom_line(size = 2.5, alpha = 0.6)+
   geom_point(shape=21,size = 2)+
   theme(aspect.ratio = aspect_ratio)+
- # geom_smooth(se = FALSE)+
+ 
 
   scale_y_continuous(trans="log10")+
   
